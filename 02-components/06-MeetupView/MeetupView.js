@@ -37,7 +37,7 @@ export default defineComponent({
 
             <h3>Программа</h3>
             <meetup-agenda
-              v-if="meetup.agenda !== ''"  
+              v-if="Object.keys(meetup.agenda).length"  
               :agenda="meetup.agenda" 
             />
             <ui-alert
