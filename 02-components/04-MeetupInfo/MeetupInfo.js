@@ -27,8 +27,8 @@ export default defineComponent({
         });
     },
     isoDate() {
-      return new Date(this.date).toISOString().split('T')[0];
-    }
+      return () => new Date(this.date).toISOString().split('T')[0];
+    },
   },
 
   template: `
