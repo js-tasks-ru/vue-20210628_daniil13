@@ -13,7 +13,7 @@ export default defineComponent({
       required: true,
     },
     date: {
-      type: String,
+      type: Number,
     },
   },
 
@@ -43,7 +43,7 @@ export default defineComponent({
       </li>
       <li>
         <img class="icon meetup-info__icon" alt="icon" src="/assets/icons/icon-cal-lg.svg" />
-        <time :datetime="isoDate">{{ localeDate() }}</time>
+        <time :datetime="isoDate()">{{ localeDate() }}</time>
       </li>
     </ul>`,
 });
